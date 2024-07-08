@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Coffee Store</title>
+    <!-- Estilos de la pagina -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Mediaqueries -->
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <link
+      rel="icon"
+      type="img/jpg"
+      sizes="32x32"
+      href="./assets/photo-1611416626766-a6ffb15d1e0c.avif"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a class="btn" href="./acceso/Login.html" target="_blank">
+          <button>Log in</button></a
+        >
+      </div>
+      <nav class="header__navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/menu.png" alt="" class="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="nav-links">
+          <li><a href="#Banner">Inicio</a></li>
+          <li><a href="#Productos">Productos</a></li>
+          <li><a href="#Nosotros">Nosotros</a></li>
+          <li><a href="#Contacto">Contacto</a></ul>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Banner" class="banner">
+        <div class="content-banner">
+          <h1>THE COFFEE STORE</h1>
+          <p>Cafeteria de especialidad</p>
+        </div>
+        <div class="frase">
+          <span>
+            Vive la experiencia en nuestro café de especialidad, donde la
+            calidad y la pasión se unen en cada taza</span
+          >
+        </div>
+      </section>
+
+      <section class="container top-categories">
+        <h1 class="heading-1">Mejores Categorias</h1>
+        <div class="container-categories">
+          <div class="card-category category-latte-macchiato">
+            <p>Latte Macchiato</p>
+            <span>Ver más</span>
+          </div>
+          <div class="card-category category-espresso">
+            <p>Espresso</p>
+            <span>Ver más</span>
+          </div>
+          <div class="card-category category-capuccino">
+            <p>Capuccino</p>
+            <span>Ver más</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="Productos" class="container top-products">
+        <h1 class="heading-1">Mejores Productos</h1>
+        <div class="container-options">
+          <span class="active">Destacados</span>
+          <span>Mas Vistos</span>
+          <span>Mas vendidos</span>
+        </div>
+        <div class="container-products">
+          <!-- Producto 1 -->
+          <div class="card-product">
+            <div class="container-img">
+              <img
+                src="./assets/photo-1685798830559-c116586a0d33.avif"
+                alt="Grano de cafe"
+              />
+              <div class="button-group">
+                <span>
+                  <i class="fa-regular fa-eye"></i>
+                </span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fa-solid fa-code-compare"></i>
+                </span>
+              </div>
+            </div>
+            <div class="content-card-product">
+              <h3>Grano Colombia</h3>
+              <p class="price">$16.000</p>
+            </div>
+          </div>
+          <!-- Producto 2 -->
+          <div class="card-product">
+            <div class="container-img">
+              <img
+                src="./assets/photo-1685798830559-c116586a0d33.avif"
+                alt="Grano de cafe"
+              />
+              <div class="button-group">
+                <span>
+                  <i class="fa-regular fa-eye"></i>
+                </span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fa-solid fa-code-compare"></i>
+                </span>
+              </div>
+            </div>
+            <div class="content-card-product">
+              <h3>Grano Italiano</h3>
+              <p class="price">$18.000</p>
+            </div>
+          </div>
+          <!-- Producto 3 -->
+          <div class="card-product">
+            <div class="container-img">
+              <img
+                src="./assets/photo-1685798830559-c116586a0d33.avif"
+                alt="Grano de cafe"
+              />
+              <div class="button-group">
+                <span>
+                  <i class="fa-regular fa-eye"></i>
+                </span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fa-solid fa-code-compare"></i>
+                </span>
+              </div>
+            </div>
+            <div class="content-card-product">
+              <h3>Grano Etiopia</h3>
+              <p class="price">$25.000</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Nosotros" class="about-us">
+        <div class="about-us__overlay"></div>
+        <div class="about-us__content">
+          <h2 class="about-us__title">Sobre Nosotros</h2>
+          <p class="about-us__description">
+            En nuestra cafetería, nos apasiona el café y la experiencia que
+            brindamos a nuestros clientes. Nos enorgullece ofrecer granos de
+            café de la más alta calidad, cuidadosamente seleccionados y tostados
+            con esmero. Nuestro objetivo es crear un ambiente acogedor donde
+            puedas disfrutar de un delicioso café y compartir momentos
+            especiales con amigos o familiares.
+          </p>
+          <a href="#" class="about-us__btn">Conoce más</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="Contacto">
+      <div class="footer-content">
+        <div class="contact-form">
+          <h3>Contactanos</h3>
+          <form>
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Correo electrónico" required />
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <div class="footer-info">
+          <h3>Cafetería de especialidad</h3>
+          <p>Calle Principal #123, Ciudad</p>
+          <p>Teléfono: 555-1234</p>
+          <p>Correo: info@Specialtycoffe.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 The Coffee Store. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

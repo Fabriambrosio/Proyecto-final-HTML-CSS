@@ -1,0 +1,408 @@
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  /* Estilos para el header */
+  .header {
+    font-size: 14px;
+  }
+  .header .nav-links {
+    left: 5%;
+    right: 5%;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: #d3c8bb;
+    border: 2px solid #673e27;
+    border-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    gap: 25px;
+    padding: 20px;
+    display: none;
+  }
+
+  .menu-label {
+    display: flex;
+    order: 2;
+    justify-content: center;
+  }
+  .menu-label img {
+    width: 25px;
+    height: 20px;
+  }
+
+  #menu-toggle:checked + .nav-links {
+    display: flex;
+  }
+
+  /* Estilos para el Banner */
+  .banner {
+    background-image: url(./photo-1690983326252-ce6205fb7055.avif);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content-banner {
+    padding: 4rem;
+  }
+
+  .content-banner h1 {
+    font-size: 1rem;
+  }
+
+  .content-banner p {
+    display: none;
+  }
+
+  .frase span {
+    display: none;
+    font-size: 8px;
+  }
+  /* Estilos para las categorias */
+  .container-categories {
+    padding: 0.6rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading-1 {
+    font-size: 1.2rem;
+  }
+
+  .card-category {
+    padding: 1rem;
+    height: 13rem;
+  }
+
+  .card-category p {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .card-category span {
+    font-size: 15px;
+  }
+  /* Estilos para los productos */
+
+  .container-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .container-options {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 14px;
+  }
+
+  .content-card-product h3,
+  .content-card-product p {
+    font-size: 14px;
+  }
+
+  /* Estilos para la sección "Sobre Nosotros" */
+
+  .about-us__content {
+    padding: 2rem;
+  }
+
+  .about-us__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .about-us__description {
+    font-size: 1rem;
+  }
+
+  .footer-info {
+    font-size: 14px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Estilos para el header */
+  .header {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .btn button {
+    padding: 12px 20px;
+  }
+
+  .header .nav-links {
+    left: 5%;
+    right: 5%;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: #d3c8bb;
+    border: 2px solid #673e27;
+    border-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    gap: 25px;
+    padding: 20px;
+    display: none;
+  }
+
+  .menu-label {
+    display: flex;
+    order: 2;
+    justify-content: center;
+  }
+  .menu-label img {
+    width: 25px;
+    height: 20px;
+  }
+
+  #menu-toggle:checked + .nav-links {
+    display: flex;
+  }
+  /* Estilos para el Banner */
+  .banner {
+    background-image: url(./photo-1690983326252-ce6205fb7055.avif);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content-banner {
+    padding: 5rem 3rem;
+  }
+
+  .content-banner h1 {
+    font-size: 2rem;
+  }
+
+  .content-banner p {
+    font-size: 1.2rem;
+  }
+
+  .frase span {
+    font-size: 12px;
+  }
+  /* Estilos para las categorias */
+  .container-categories {
+    padding: 0.6rem;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .heading-1 {
+    font-size: 2rem;
+  }
+
+  .card-category {
+    padding: 1rem;
+    height: 13rem;
+  }
+
+  .card-category p {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .card-category span {
+    font-size: 15px;
+  }
+  /* Estilos para los productos */
+
+  .container-products {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .content-card-product h3,
+  .content-card-product p {
+    font-size: 14px;
+  }
+
+  /* Estilos para la sección "Sobre Nosotros" */
+
+  .about-us__content {
+    padding: 2rem;
+  }
+
+  .about-us__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .about-us__description {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1023px) {
+  /* Estilos para el header */
+  .header {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .btn button {
+    padding: 12px 20px;
+  }
+  /* Estilos para el Banner */
+  .banner {
+    background-image: url(./photo-1690983326252-ce6205fb7055.avif);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content-banner h1 {
+    font-size: 3rem;
+  }
+
+  .content-banner p {
+    font-size: 1.8rem;
+  }
+
+  .frase span {
+    font-size: 1rem;
+  }
+  /* Estilos para las categorias */
+  .container-categories {
+    padding: 0.6rem;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .heading-1 {
+    font-size: 2rem;
+  }
+
+  .card-category {
+    padding: 1rem;
+    height: 13rem;
+  }
+
+  .card-category p {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .card-category span {
+    font-size: 1rem;
+  }
+  /* Estilos para los productos */
+
+  .container-products {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  /* Estilos para la sección "Sobre Nosotros" */
+
+  .about-us__content {
+    padding: 2rem;
+  }
+
+  .about-us__title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .about-us__description {
+    font-size: 1.2rem;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Estilos para pantallas grandes (desktops) */
+@media (min-width: 1024px) {
+  /* Estilos para el header */
+  .header {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .btn button {
+    padding: 12px 20px;
+  }
+
+  /* Estilos para el banner */
+  .banner {
+    padding: 5rem 4rem;
+  }
+
+  .content-banner h1 {
+    font-size: 3.6rem;
+  }
+
+  .content-banner p {
+    font-size: 1.8rem;
+  }
+
+  .frase span {
+    font-size: 1.2rem;
+  }
+
+  /* Estilos para las categorías */
+
+  .container-categories {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  /* Estilos para los productos */
+
+  .container-products {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  /* Estilos para la sección "Sobre Nosotros" */
+
+  .about-us__content {
+    padding: 2rem;
+  }
+
+  .about-us__title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .about-us__description {
+    font-size: 1.2rem;
+  }
+}
